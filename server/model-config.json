@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "member": {
+    "dataSource": null,
+    "public": true
+  },
+  "book": {
+    "dataSource": null,
+    "public": true
+  },
+  "Book": {
+    "dataSource": null,
+    "public": true
+  },
+  "borrowDt": {
+    "dataSource": null,
+    "public": true
+  }
+}

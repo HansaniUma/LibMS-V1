@@ -1,0 +1,34 @@
+{
+  "name": "Book",
+  "plural": "book",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bookId": {
+      "type": "number",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "number"
+    },
+    "availability": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "borrowDt",
+  "plural": "borrowDt",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "borrowId": {
+      "type": "number",
+      "required": true
+    },
+    "memId": {
+      "type": "number",
+      "required": true
+    },
+    "bookId": {
+      "type": "number",
+      "required": true
+    },
+    "issueDate": {
+      "type": "date",
+      "required": true
+    },
+    "expDate": {
+      "type": "date",
+      "required": true
+    },
+    "returnedDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
