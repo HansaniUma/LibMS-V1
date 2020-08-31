@@ -6,6 +6,22 @@
   "options": {
     "validateUpsert": true
   },
+
+  "foreignKey": {
+    "memId": {
+      "name": "memId",
+      "foreignKey": "memId",
+      "entityKey": "id",
+      "entity": "member"
+    },
+    "bookId": {
+      "name": "bookId",
+      "foreignKey": "bookId",
+      "entityKey": "bookId",
+      "entity": "book"
+    }
+  },
+
   "properties": {
     "borrowId": {
       "type": "number",
@@ -33,7 +49,20 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "book": {
+      "type": "belongsTo",
+      "model": "book",
+      "foreignKey": "bookId",
+      "primaryKey": "bookId"
+    },
+    "member": {
+      "type": "belongsTo",
+      "model": "member",
+      "foreignKey": "memId",
+      "primaryKey": "id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
